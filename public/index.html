@@ -1,89 +1,1100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.10.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.10.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.10.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.10.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.10.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.10.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.10.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.10.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.10.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.10.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamith Methdula - Cybersecurity & Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-blue': '#00d4ff',
+                        'cyber-purple': '#8b5cf6',
+                        'cyber-green': '#00ff88',
+                        'dark-bg': '#0f0f0f',
+                        'dark-card': '#1a1a1a',
+                        'dark-text': '#ffffff',
+                        'dark-secondary': '#b3b3b3',
+                        'light-bg': '#f8fafc',
+                        'light-card': '#ffffff',
+                        'light-text': '#1a202c',
+                        'light-secondary': '#4a5568',
+                        'light-border': '#e2e8f0',
+                        'dark-border': '#333333',
+                    }
+                }
+            }
         }
-      });
     </script>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+            overflow-x: hidden;
+        }
+
+        /* Dark mode styles */
+        .dark-theme {
+            background-color: #0f0f0f;
+            color: #ffffff;
+        }
+
+        .dark-theme .nav-bg {
+            background: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #333333;
+        }
+
+        .dark-theme .card-bg {
+            background: #1a1a1a;
+            border: 1px solid #333333;
+        }
+
+        .dark-theme .glass-effect {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid #333333;
+        }
+
+        .dark-theme .input-bg {
+            background: #1a1a1a;
+            border: 1px solid #333333;
+            color: #ffffff;
+        }
+
+        .dark-theme .text-secondary {
+            color: #b3b3b3;
+        }
+
+        .dark-theme .border-custom {
+            border-color: #333333;
+        }
+
+        /* Light mode styles */
+        .light-theme {
+            background-color: #f8fafc;
+            color: #1a202c;
+        }
+
+        .light-theme .nav-bg {
+            background: rgba(248, 250, 252, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .light-theme .card-bg {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+        }
+
+        .light-theme .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid #e2e8f0;
+        }
+
+        .light-theme .input-bg {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            color: #1a202c;
+        }
+
+        .light-theme .text-secondary {
+            color: #4a5568;
+        }
+
+        .light-theme .border-custom {
+            border-color: #e2e8f0;
+        }
+
+        .light-theme .floating-btn {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #e2e8f0;
+            color: #1a202c;
+        }
+
+        .light-theme .floating-btn:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        /* Common styles */
+        .gradient-text {
+            background: linear-gradient(135deg, #00d4ff, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #00d4ff, #8b5cf6);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .scroll-indicator {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .scroll-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .scroll-dot.active {
+            background: #00d4ff;
+            border-color: #00d4ff;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+
+        .floating-btn {
+            position: fixed;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(26, 26, 26, 0.9);
+            border: 1px solid #333333;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+        }
+
+        .theme-toggle {
+            bottom: 30px;
+        }
+
+        .cv-download {
+            bottom: 110px;
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+        }
+
+        .skill-badge {
+            transition: all 0.3s ease;
+        }
+
+        .skill-badge:hover {
+            transform: scale(1.05);
+        }
+
+        .section-padding {
+            padding: 6rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .typing-animation {
+            border-right: 2px solid #00d4ff;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { border-color: #00d4ff; }
+            51%, 100% { border-color: transparent; }
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #00d4ff, #8b5cf6);
+            z-index: 1001;
+            transition: width 0.1s ease;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100vh;
+            background: rgba(15, 15, 15, 0.98);
+            backdrop-filter: blur(20px);
+            border-left: 1px solid #333333;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            z-index: 1002;
+        }
+
+        .light-theme .mobile-menu {
+            background: rgba(248, 250, 252, 0.98);
+            border-left: 1px solid #e2e8f0;
+        }
+
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .notification {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #00d4ff, #8b5cf6);
+            color: white;
+            padding: 16px 24px;
+            border-radius: 12px;
+            z-index: 1003;
+            transform: translateX(calc(100% + 30px));
+            transition: transform 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .scroll-indicator {
+                display: none;
+            }
+
+            .section-padding {
+                padding: 4rem 0;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .floating-btn {
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+
+            .theme-toggle {
+                bottom: 20px;
+            }
+
+            .cv-download {
+                bottom: 85px;
+            }
+        }
+
+        /* Ensure smooth scrolling behavior */
+        section {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <!-- Progress Bar -->
+    <div class="progress-bar" style="width: 0%;"></div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <span id="notification-text"></span>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="p-8">
+            <div class="flex justify-between items-center mb-8">
+                <div class="text-xl font-black gradient-text">MENU</div>
+                <button id="close-menu" class="w-8 h-8 flex items-center justify-center">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="space-y-6">
+                <a href="#home" class="nav-link block text-lg font-medium">Home</a>
+                <a href="#about" class="nav-link block text-lg font-medium">About</a>
+                <a href="#projects" class="nav-link block text-lg font-medium">Projects</a>
+                <a href="#skills" class="nav-link block text-lg font-medium">Skills</a>
+                <a href="#contact" class="nav-link block text-lg font-medium">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-dot" data-section="home" title="Home"></div>
+        <div class="scroll-dot" data-section="about" title="About"></div>
+        <div class="scroll-dot" data-section="projects" title="Projects"></div>
+        <div class="scroll-dot" data-section="skills" title="Skills"></div>
+        <div class="scroll-dot" data-section="contact" title="Contact"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="floating-btn theme-toggle" id="theme-toggle" title="Toggle Theme">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+    </div>
+
+    <!-- CV Download -->
+    <div class="floating-btn cv-download" id="cv-download" title="Download CV">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 nav-bg">
+        <div class="container">
+            <div class="flex items-center justify-between py-4">
+                <div class="text-2xl font-black gradient-text">
+                    P.METHDULA
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link font-medium">Home</a>
+                    <a href="#about" class="nav-link font-medium">About</a>
+                    <a href="#projects" class="nav-link font-medium">Projects</a>
+                    <a href="#skills" class="nav-link font-medium">Skills</a>
+                    <a href="#contact" class="nav-link font-medium">Contact</a>
+                </div>
+                <button class="md:hidden w-8 h-8 flex items-center justify-center" id="menu-toggle">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative">
+        <div class="container text-center">
+            <h1 class="text-5xl md:text-7xl font-black mb-6">
+                <span class="gradient-text">PAMITH</span>
+                <br>
+                <span>METHDULA</span>
+            </h1>
+            <div class="text-xl md:text-2xl mb-8 h-12 flex items-center justify-center">
+                <span class="typing-animation" id="typing-text"></span>
+            </div>
+            <p class="text-lg md:text-xl text-secondary mb-12 max-w-3xl mx-auto">
+                Final year Computer Security student at NSBM Green University, passionate about building secure, innovative solutions in cybersecurity, IoT, and full-stack development.[3]
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="#projects" class="px-8 py-4 bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-full text-white font-semibold hover:shadow-lg transition-all duration-300">
+                    View My Projects
+                </a>
+                <a href="#contact" class="px-8 py-4 border-2 border-cyber-blue rounded-full text-cyber-blue hover:bg-cyber-blue hover:text-white transition-all duration-300">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-20 w-4 h-4 bg-cyber-green rounded-full animate-float"></div>
+        <div class="absolute bottom-20 right-20 w-6 h-6 bg-cyber-purple rounded-full animate-float" style="animation-delay: 1s;"></div>
+        <div class="absolute top-1/2 left-10 w-3 h-3 bg-cyber-blue rounded-full animate-float" style="animation-delay: 2s;"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-black mb-12 text-center gradient-text">About Me</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="glass-effect rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-cyber-blue">Background</h3>
+                        <p class="text-secondary mb-6">
+                            I'm Athukoralalage Pamith Methdula, a final-year Computer Security student at NSBM Green University, pursuing a BSc (Hons) from the University of Plymouth, UK. My passion lies in cybersecurity, full-stack development, and IoT systems.[3]
+                        </p>
+                        <p class="text-secondary mb-6">
+                            With hands-on experience in penetration testing, secure application development, and IoT monitoring systems, I bring a unique blend of security awareness and development skills to every project.
+                        </p>
+                        <div class="flex flex-col space-y-2 text-sm text-secondary">
+                            <span>📧 athukoralapamith@gmail.com</span>
+                            <span>📱 +94 71 770 3304</span>
+                        </div>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-cyber-purple">Education & Certifications</h3>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-cyber-blue pl-6">
+                                <h4 class="font-semibold text-cyber-blue text-lg">BSc (Hons) Computer Security</h4>
+                                <p class="text-secondary">University of Plymouth, UK</p>
+                                <p class="text-secondary text-sm">NSBM Green University, Sri Lanka</p>
+                            </div>
+                            <div class="border-l-4 border-cyber-green pl-6">
+                                <h4 class="font-semibold text-cyber-green text-lg">Certified Ethical Hacker</h4>
+                                <p class="text-secondary">Cisco Networking Academy</p>
+                                <p class="text-secondary text-sm">July 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="text-4xl font-black mb-12 text-center gradient-text">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card card-bg rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-cyber-blue">Smart Grocery Price Comparison</h3>
+                        <div class="w-12 h-12 bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-secondary mb-4">Mobile app for comparing grocery prices across Sri Lankan supermarkets with real-time updates and shopping reminders.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">React Native</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-purple bg-opacity-20 text-cyber-purple rounded-full text-sm">Django</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-green bg-opacity-20 text-cyber-green rounded-full text-sm">Firebase</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-secondary">Group Project</span>
+                        <button class="text-cyber-blue hover:text-cyber-purple transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card card-bg rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-cyber-purple">PowerMate IoT Monitoring</h3>
+                        <div class="w-12 h-12 bg-gradient-to-r from-cyber-purple to-cyber-green rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-secondary mb-4">IoT system monitoring telecommunication towers with real-time power status, voltage, current, and environmental data.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">ESP32</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-purple bg-opacity-20 text-cyber-purple rounded-full text-sm">MERN Stack</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-green bg-opacity-20 text-cyber-green rounded-full text-sm">MongoDB</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-secondary">IoT Project</span>
+                        <button class="text-cyber-blue hover:text-cyber-purple transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card card-bg rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-cyber-green">React Expense Tracker</h3>
+                        <div class="w-12 h-12 bg-gradient-to-r from-cyber-green to-cyber-blue rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-secondary mb-4">Full-featured expense tracking app with PDF export, chart visualizations, and theme toggle functionality.[4]</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">React</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-purple bg-opacity-20 text-cyber-purple rounded-full text-sm">Firebase</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-green bg-opacity-20 text-cyber-green rounded-full text-sm">Recharts</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-secondary">Individual Project</span>
+                        <button class="text-cyber-blue hover:text-cyber-purple transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card card-bg rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-cyber-blue">ABC Cinema Booking</h3>
+                        <div class="w-12 h-12 bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-secondary mb-4">Web-based cinema ticket booking platform with real-time seat selection and booking management.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">JSP</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-purple bg-opacity-20 text-cyber-purple rounded-full text-sm">Java</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-green bg-opacity-20 text-cyber-green rounded-full text-sm">SQL</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-secondary">Group Project</span>
+                        <button class="text-cyber-blue hover:text-cyber-purple transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card card-bg rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-cyber-purple">Coffee Shop E-commerce</h3>
+                        <div class="w-12 h-12 bg-gradient-to-r from-cyber-purple to-cyber-green rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-secondary mb-4">Responsive e-commerce platform with admin panel, cart functionality, and secure payment integration.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">PHP</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-purple bg-opacity-20 text-cyber-purple rounded-full text-sm">Laravel</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-green bg-opacity-20 text-cyber-green rounded-full text-sm">MySQL</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-secondary">Group Project</span>
+                        <button class="text-cyber-blue hover:text-cyber-purple transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card card-bg rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-cyber-green">Weather Monitoring Web Application</h3>
+                        <div class="w-12 h-12 bg-gradient-to-r from-cyber-green to-cyber-blue rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-secondary mb-4">This project is a real-time Weather Monitoring Web Application. The application offers an interactive dashboard where users can search for weather conditions in any city around the world</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">Node.js</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-purple bg-opacity-20 text-cyber-purple rounded-full text-sm"> Express.js</span>
+                        <span class="skill-badge px-3 py-1 bg-cyber-green bg-opacity-20 text-cyber-green rounded-full text-sm">MongoDB</span>
+                         <span class="skill-badge px-3 py-1 bg-cyber-green bg-opacity-20 text-cyber-green rounded-full text-sm">Weather API</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-secondary">Individual Project</span>
+                        <button class="text-cyber-blue hover:text-cyber-purple transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2 class="text-4xl font-black mb-12 text-center gradient-text">Technical Skills</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Frontend -->
+                    <div class="glass-effect rounded-2xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-cyber-blue">Frontend</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">React</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">React Native</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">HTML/CSS</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">JavaScript</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">Redux</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="glass-effect rounded-2xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyber-purple to-cyber-green rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-cyber-purple">Backend</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge px-3 py-1 bg-cyber-purple bg-opacity-20 text-cyber-purple rounded-full text-sm">Node.js</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-purple bg-opacity-20 text-cyber-purple rounded-full text-sm">Django</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-purple bg-opacity-20 text-cyber-purple rounded-full text-sm">Laravel</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-purple bg-opacity-20 text-cyber-purple rounded-full text-sm">PHP</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-purple bg-opacity-20 text-cyber-purple rounded-full text-sm">Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="glass-effect rounded-2xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyber-green to-cyber-blue rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-cyber-green">Database</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge px-3 py-1 bg-cyber-green bg-opacity-20 text-cyber-green rounded-full text-sm">MongoDB</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-green bg-opacity-20 text-cyber-green rounded-full text-sm">MySQL</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-green bg-opacity-20 text-cyber-green rounded-full text-sm">Firebase</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-green bg-opacity-20 text-cyber-green rounded-full text-sm">SQL Server</span>
+                        </div>
+                    </div>
+
+                    <!-- Security & IoT -->
+                    <div class="glass-effect rounded-2xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-cyber-blue">Security & IoT</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">Penetration Testing</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">ESP32</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">Arduino</span>
+                            <span class="skill-badge px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue rounded-full text-sm">Ethical Hacking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold mb-8 text-center text-cyber-purple">Tools & Technologies</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="skill-badge px-4 py-2 card-bg rounded-full border-custom hover:bg-cyber-blue hover:text-white transition-all">Git</span>
+                        <span class="skill-badge px-4 py-2 card-bg rounded-full border-custom hover:bg-cyber-blue hover:text-white transition-all">Visual Studio</span>
+                        <span class="skill-badge px-4 py-2 card-bg rounded-full border-custom hover:bg-cyber-blue hover:text-white transition-all">Arduino IDE</span>
+                        <span class="skill-badge px-4 py-2 card-bg rounded-full border-custom hover:bg-cyber-blue hover:text-white transition-all">Figma</span>
+                        <span class="skill-badge px-4 py-2 card-bg rounded-full border-custom hover:bg-cyber-blue hover:text-white transition-all">Docker</span>
+                        <span class="skill-badge px-4 py-2 card-bg rounded-full border-custom hover:bg-cyber-blue hover:text-white transition-all">REST APIs</span>
+                        <span class="skill-badge px-4 py-2 card-bg rounded-full border-custom hover:bg-cyber-blue hover:text-white transition-all">Postman</span>
+                        <span class="skill-badge px-4 py-2 card-bg rounded-full border-custom hover:bg-cyber-blue hover:text-white transition-all">XAMPP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="text-4xl font-black mb-12 text-center gradient-text">Get In Touch</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <p class="text-xl text-secondary mb-8">
+                        I'm actively seeking internship opportunities in cybersecurity, full-stack development, IoT, or software engineering. Let's connect and build something amazing together!
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Contact Info -->
+                    <div class="glass-effect rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-8 text-cyber-blue">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-secondary text-sm">Email</p>
+                                    <p class="font-medium">athukoralapamith@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-r from-cyber-purple to-cyber-green rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-secondary text-sm">Phone</p>
+                                    <p class="font-medium">+94 71 770 3304</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-r from-cyber-green to-cyber-blue rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-secondary text-sm">Location</p>
+                                    <p class="font-medium">Sri Lanka</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-secondary text-sm">LinkedIn</p>
+                                    <a href="https://www.linkedin.com/in/pamith-methdula-a19a77282/" class="text-cyber-blue hover:text-cyber-purple transition-colors font-medium">pamith-methdula</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="glass-effect rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-8 text-cyber-purple">Send Message</h3>
+                        <form class="space-y-6" id="contact-form">
+                            <div>
+                                <label class="block text-sm font-medium text-secondary mb-2">Name</label>
+                                <input type="text" name="name" class="w-full px-4 py-3 input-bg rounded-lg focus:outline-none focus:ring-2 focus:ring-cyber-blue transition-all" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-secondary mb-2">Email</label>
+                                <input type="email" name="email" class="w-full px-4 py-3 input-bg rounded-lg focus:outline-none focus:ring-2 focus:ring-cyber-blue transition-all" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-secondary mb-2">Subject</label>
+                                <input type="text" name="subject" class="w-full px-4 py-3 input-bg rounded-lg focus:outline-none focus:ring-2 focus:ring-cyber-blue transition-all" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-secondary mb-2">Message</label>
+                                <textarea rows="4" name="message" class="w-full px-4 py-3 input-bg rounded-lg focus:outline-none focus:ring-2 focus:ring-cyber-blue transition-all resize-none" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full px-8 py-4 bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-lg text-white font-semibold hover:shadow-lg transition-all duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-custom">
+        <div class="container">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <div class="text-2xl font-black gradient-text mb-2">Pamith Methdula</div>
+                    <p class="text-secondary">Cybersecurity & Full-Stack Developer</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/pamith-methdula-a19a77282/" class="text-secondary hover:text-cyber-blue transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:athukoralapamith@gmail.com" class="text-secondary hover:text-cyber-blue transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com" class="text-secondary hover:text-cyber-blue transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931
+                    0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322
+                    3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404
+                    2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84
+                    1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823
+                    2.222v3.293c0 .319.192.694.801.576C20.565 21.795 24 17.302 24 12c0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-custom text-center text-secondary">
+                &copy; <span id="year"></span> Pamith Methdula. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==============================  JAVASCRIPT  ================================= -->
+    <script>
+        /* -------------------------------------------------------------------------- */
+        /*                                  THEME                                     */
+        /* -------------------------------------------------------------------------- */
+        const body            = document.body;
+        const themeToggleBtn  = document.getElementById('theme-toggle');
+        const userTheme       = localStorage.getItem('theme') || 'dark';  // default = dark
+
+        function applyTheme(theme){
+            if(theme === 'light'){
+                body.classList.remove('dark-theme');
+                body.classList.add   ('light-theme');
+                themeToggleBtn.innerHTML = `
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M12 4V2m0 20v-2m8-8h2M2 12H4m14.95-6.95l1.414-1.414M4.636 19.364l1.414-1.414M19.364 19.364l-1.414-1.414M6.05 6.05L4.636 4.636M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    </svg>`;
+            }else{
+                body.classList.add   ('dark-theme');
+                body.classList.remove('light-theme');
+                themeToggleBtn.innerHTML = `
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                    </svg>`;
+            }
+            localStorage.setItem('theme',theme);
+        }
+        applyTheme(userTheme);
+
+        themeToggleBtn.addEventListener('click',()=>applyTheme(
+            body.classList.contains('dark-theme') ? 'light':'dark'
+        ));
+
+        /* -------------------------------------------------------------------------- */
+        /*                       TYPE-WRITER   (simple looping)                      */
+        /* -------------------------------------------------------------------------- */
+        const typingTarget = document.getElementById('typing-text');
+        const typingText   = 'Cybersecurity & Full-Stack Developer';
+        let typingIdx      = 0;
+        function typeLoop(){
+            typingIdx  = (typingIdx+1)% (typingText.length+40);  // pause for ~40 frames
+            typingTarget.textContent = typingText.slice(0,Math.min(typingIdx,typingText.length));
+            requestAnimationFrame(typeLoop);
+        }
+        requestAnimationFrame(typeLoop);
+
+        /* -------------------------------------------------------------------------- */
+        /*                        SCROLL   PROGRESS   +  DOTS                        */
+        /* -------------------------------------------------------------------------- */
+        const progressBar = document.querySelector('.progress-bar');
+        const dots        = document.querySelectorAll('.scroll-dot');
+        const sections    = document.querySelectorAll('section');
+        const navLinks    = document.querySelectorAll('.nav-link');
+
+        function updateScrollStuff(){
+            /* progress-bar */
+            const scrollY   = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            progressBar.style.width = `${(scrollY/docHeight)*100}%`;
+
+            /* detect current section */
+            let current = '';
+            sections.forEach(sec=>{
+                const rect = sec.getBoundingClientRect();
+                if(rect.top <= 120 && rect.bottom >= 120) current = sec.id;
+            });
+
+            /* update nav & dots */
+            navLinks.forEach(l=>{
+                l.classList.toggle('text-cyber-blue', l.getAttribute('href')==='#'+current);
+                l.classList.toggle('active'          , l.getAttribute('href')==='#'+current);
+            });
+            dots.forEach(d=>{
+                d.classList.toggle('active', d.dataset.section===current);
+            });
+        }
+        window.addEventListener('scroll', updateScrollStuff);
+        updateScrollStuff();      // initial
+
+        /* dot click → smooth scroll */
+        dots.forEach(dot=>{
+            dot.addEventListener('click',()=>document
+                 .getElementById(dot.dataset.section)
+                 .scrollIntoView({behavior:'smooth'}));
+        });
+
+        /* smooth anchor links */
+        navLinks.forEach(link=>{
+            link.addEventListener('click',e=>{
+                e.preventDefault();
+                document.querySelector(link.getAttribute('href'))
+                        .scrollIntoView({behavior:'smooth'});
+            });
+        });
+
+        /* -------------------------------------------------------------------------- */
+        /*                            MOBILE  MENU  (drawer)                          */
+        /* -------------------------------------------------------------------------- */
+        const burger  = document.getElementById('menu-toggle');
+        const closeM  = document.getElementById('close-menu');
+        const drawer  = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('mobile-menu-overlay');
+
+        function openDrawer(){
+            drawer.classList.add('open'); overlay.classList.add('open');
+            document.body.style.overflow='hidden';
+        }
+        function closeDrawer(){
+            drawer.classList.remove('open'); overlay.classList.remove('open');
+            document.body.style.overflow='';
+        }
+        burger .addEventListener('click',openDrawer);
+        closeM .addEventListener('click',closeDrawer);
+        overlay.addEventListener('click',closeDrawer);
+        drawer.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',closeDrawer));
+
+        /* -------------------------------------------------------------------------- */
+        /*                             NOTIFICATION  POP-UP                           */
+        /* -------------------------------------------------------------------------- */
+        const notify   = document.getElementById('notification');
+        const notifyTx = document.getElementById('notification-text');
+        function showNotification(msg){
+            notifyTx.textContent = msg;
+            notify.classList.add('show');
+            setTimeout(()=>notify.classList.remove('show'),3000);
+        }
+
+        /* -------------------------------------------------------------------------- */
+        /*                               CV  DOWNLOAD                                 */
+        /* -------------------------------------------------------------------------- */
+        document.getElementById('cv-download').addEventListener('click',()=>{
+            const cvText=`Pamith Methdula
+Cybersecurity & Full-Stack Developer
+
+Email : athukoralapamith@gmail.com
+Phone : +94 71 770 3304
+LinkedIn : https://www.linkedin.com/in/pamith-methdula-a19a77282/
+
+Education
+  • BSc (Hons) Computer Security – University of Plymouth / NSBM
+
+Certifications
+  • Certified Ethical Hacker – 2025
+
+Key Skills
+  • React, Node.js, Django, Laravel
+  • Pen-Testing, IoT (ESP32), Docker, Git …
+
+Projects
+  • Smart Grocery Price Comparison (RN + Django)
+  • PowerMate IoT Monitoring (ESP32 + MERN)
+  • …`;
+
+            const blob = new Blob([cvText],{type:'text/plain'});
+            const url  = URL.createObjectURL(blob);
+            const a    = document.createElement('a');
+            a.href = url; a.download='Pamith_Methdula_CV.txt';
+            document.body.appendChild(a); a.click();
+            URL.revokeObjectURL(url); document.body.removeChild(a);
+            showNotification('CV downloaded!');
+        });
+
+        /* -------------------------------------------------------------------------- */
+        /*                        CONTACT  FORM  (fake submit)                        */
+        /* -------------------------------------------------------------------------- */
+        document.getElementById('contact-form').addEventListener('submit',e=>{
+            e.preventDefault();
+            showNotification('Thank you! Your message has been sent.');
+            e.target.reset();
+        });
+
+        /* -------------------------------------------------------------------------- */
+        /*                         DYNAMIC   FOOTER   YEAR                            */
+        /* -------------------------------------------------------------------------- */
+        document.getElementById('year').textContent=new Date().getFullYear();
+    </script>
+</body>
 </html>
